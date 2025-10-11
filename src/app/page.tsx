@@ -19,6 +19,9 @@ export default function Home() {
 
   const handleBackToTitle = () => {
     setShowTitleScreen(true);
+    // Reset progress when going back to title screen
+    setCurrentScreen("order_qn");
+    setScreenHistory(["order_qn"]);
   };
 
   const handleNavigate = (nextKey: string) => {
